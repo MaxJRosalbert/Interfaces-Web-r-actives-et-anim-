@@ -1,0 +1,34 @@
+[
+    {
+        "id": "btc",
+        "nom": "Bitcoin",
+        "difference": "-0.87%",
+        "prix": 6975.63,
+        "vente": 69523.25,
+        "achat": 70521.56
+    },
+    {
+        "id": "edt",
+        "nom": "Ethereum",
+        "difference": "-0.87%",
+        "prix": 6975.63,
+        "vente": 69523.25,
+        "achat": 70521.56
+    },
+    {
+        "id": "sol",
+        "nom": "Solana",
+        "difference": "-0.87%",
+        "prix": 6975.63,
+        "vente": 69523.25,
+        "achat": 70521.56
+    },
+    {
+        "id": "Xrp",
+        "nom": "XRP",
+        "difference": "-0.87%",
+        "prix": 6975.63,
+        "vente": 69523.25,
+        "achat": 70521.56
+    }
+]

@@ -1,0 +1,363 @@
+/* body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+@media screen and (min-width: 320px){
+    
+    /* .Entete{
+        width: 100%;
+        height: 5vh;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+    }
+    .Tim{
+        width: 90px;
+        height: 40px;
+    }
+    .Mjr{
+        width: 40px;
+        height: 40px;
+    }
+    h1{
+        font-size: 1em;
+    } */
+    
+    /************************************************************************************/
+    
+    /* .Principal{
+        min-height: 80vh;
+        animation: infinite 21s linear rainbow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @keyframes rainbow {
+        0% {
+            background-image: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+        }
+        25% {
+            background-image: linear-gradient(violet,red,orange,yellow,green,blue,indigo);
+        }
+        40% {
+            background-image: linear-gradient(indigo,violet,red,orange,yellow,green,blue);
+        }
+        55% {
+            background-image: linear-gradient(blue,indigo,violet,red,orange,yellow,green);
+        }
+        70% {
+            background-image: linear-gradient(green,blue,indigo,violet,red,orange,yellow);
+        }
+        85% {
+            background-image: linear-gradient(yellow,green,blue,indigo,violet,red,orange);
+        }
+        100% {
+            background-image: linear-gradient(orange,yellow,green,blue,indigo,violet,red);
+        }
+    } */
+
+    .Contenu{
+        width: 100%;
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .IconTaches{
+        width: 75px;
+        height: 75px;
+    }
+
+    .SectionAjout{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .AjoutTache{
+        width: 65%;
+        height: 50%;
+        font-size: 16px;
+        padding: 10px;
+        float: left;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        box-shadow: 2px 3.5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    }
+    .AjoutBtn{
+        width: 15%;
+        height: 50%;
+        font-size: 16px;
+        padding: 10px;
+        float: left;
+        background: #d9d9d9;
+        color: #555;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 2px 3.5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+        transition: 0.3s;
+        border-radius: 0 20px 20px 0;
+    }
+    .AjoutBtn:hover{
+        background: #bbb;
+        box-shadow: none;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .ListeTaches{
+        width: 90%;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 10%;
+        padding: 2.5%;
+    }
+    .TacheCocher{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .Tache{
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        color: #fff;
+        background-color: royalblue;
+        box-shadow: 0  0 25px rgba(0, 0, 0, 0.75); /* Ombre portée */
+        border: 0;
+        outline: 0;
+        border-radius: 56px;
+        font-weight: 600;
+        font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+        transition: all .3s;
+    }
+    .Tache:before {
+        width: 92%;
+        height: 50%;
+        content: "";
+        background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+        opacity: .5;
+        border-radius: 125px;
+        position: absolute;
+        top: 0;
+        left: 4%;
+        transition: all .3s;
+    }
+    .Tache:hover {
+        box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+        transform: scale(1.05);
+    }
+
+    .SupprTache{
+        width: 25px;
+        height: 25px;
+    }
+    .TacheTexte{    
+        font-size: 1.2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .Tache input:checked ~ .ContenuTache{
+        opacity: 0.25;
+    }
+    .Tache input:checked ~ .ContenuTache .TacheTexte, 
+    .Tache input:checked ~ .ContenuTache .DateTache {
+        color: #000000;
+        text-decoration: line-through;
+    }
+
+    
+    
+
+    /************************************************************************************/
+
+    .Pied2Page{
+        width: 100%;
+        height: 15vh;
+        background-color: silver;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .TachesActive{
+        color: #fff;
+        font-size: 1.2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        
+    }
+
+    .ListeBtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ListeBtn > button {
+        max-width: 100%;
+        min-width: 140px;
+        height: 35px;
+        border: 0;
+        border-radius: 16px;
+        font-size: 20px;
+        line-height: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        font-family: Phantomsans, sans-serif;
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+        color: #FFFFFF;
+        background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+        box-shadow: 0  0 25px rgba(0, 0, 0, 0.85); /* Ombre portée */
+    }
+    
+    .ListeBtn > button:active,
+    .ListeBtn > button:hover {
+      outline: 0;
+    }
+
+    .SupprTaches {
+        height: 50px;
+        border: 0;
+        border-radius: 20px;
+        font-size: 18px;
+        padding: 0 16px;
+        align-items: center;
+        cursor: pointer;
+        transition: box-shadow .15s,transform .15s;
+        background-image: radial-gradient(100% 100% at 100% 0, #f38b8b 0, #cc2610 100%);
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        color: #fff;
+    }
+    .SupprTaches:focus {
+        box-shadow: #e03c3c 0 0 0 1.5px inset, rgba(66, 35, 35, 0.5) 0 2px 4px, rgba(66, 35, 35, 0.3) 0 7px 13px -3px, #e03c3c 0 -3px 0 inset;
+    }
+    .SupprTaches:hover {
+        box-shadow: rgba(65, 35, 35, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e03ca1 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+    .SupprTaches:active {
+        box-shadow: #e03c3c 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .Entete{
+        height: 6%;
+    }
+
+    .Tim{
+        width: 180px;
+        height: 80px;
+    }
+    .Mjr{
+        width: 80px;
+        height: 80px;
+    }
+    h1{
+        font-size: 2em;
+    }
+
+
+    .Principal{
+        min-height: 80.75vh;
+        padding: 2.5%;
+    }
+    .IconTaches{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ListeTaches{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Tache{
+        width: 45%;
+        min-height: 150px;
+    }
+
+    .ContenuTache{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .Pied2Page{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .TachesActive{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .Entete{
+        height: 6.5vh;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+
+    .Principal{
+        min-height: 82vh;
+        padding: 0.75%;
+    }
+
+    .IconTaches{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ListeTaches{
+        margin: 0;
+        padding: 0;
+    }
+    .Tache{
+        height: 150px;
+        width: 22.5%;
+    }
+
+
+    .Pied2Page{
+        height: 10vh;
+    }
+    .TachesActive{
+        width: 30%;
+        order: 2;
+    }
+    .ListeBtn > button{
+        order: 1;
+    }
+    .SupprTaches{
+        order: 3;
+    }
+}

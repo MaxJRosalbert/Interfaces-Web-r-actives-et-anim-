@@ -1,0 +1,14 @@
+NPM
+- npm create vite (1ère fois Npm create -vite)
+- npm install
+-
+- npm rum .....(appeler un "scripts" dans "packaage.json")
+-- build (faire un dist (faire un condensé html css js du projet))
+-- dev (execution live preview)
+
+Git
+
+C:reat
+R:ead
+U:pdate
+D:elette
